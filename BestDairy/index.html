@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!---------------------color Used in these template: Blue  #006eff
+													 Green #00ff37
+													 White #fff
+													 Black #000
+													 Grey  #efefef ---------------------------->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Best Dairy - HOME</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel='icon' href="images/loggo.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!----------------------------------header+links+loggo------------------------------------->
+
+<section class="header">
+	<nav>
+		<a href="index.html"><img src="images/loggo.png"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="products.html">OUR SPECIALITY</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT US</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+	</nav>
+	<div class="text-box">
+		<h1>Do the Best, Be the Best</h1>
+		<p>Producing pouch packed Milk & other Milk Products including Buttermilk, Dahi, Shrikhand,<br>Mango Milk-shake & many more & supplying it in the region of North Gujarat, India.</p>
+		<a href="contact.html" class="hero-btn">Contact Us to know more</a>
+	</div>
+</section>
+
+
+<!----------------------------------------Product Slider------------------------------------>
+
+
+<section class="slider">
+	<h1 class="pwm">Our Speciality in these Items</h1>
+
+	<div class="carousel" data-flickity= '{ "wrapAround": true, "autoPlay": true }'>
+  		<div class="carousel-cell">
+  			<img class="milkcard" src="images/milkcard1.jpg">
+  		</div>
+ 		<div class="carousel-cell">
+ 			<img class="mmscard" src="images/mmscard1.jpg">
+ 		</div>
+  		<div class="carousel-cell">
+  			<img class="bmcard" src="images/bmcard1.jpg">
+  		</div>
+  		<div class="carousel-cell">
+  			<img class="pedacard" src="images/pedacard1.jpg">
+  		</div>
+  		<div class="carousel-cell">
+  			<img class="dahicard" src="images/dahicard1.jpg">
+  		</div>
+  		<div class="carousel-cell">
+  			<img class="shrikhandcard" src="images/shrikhandcard1.jpg">
+  		</div>
+  		<div class="carousel-cell">
+  			<img class="halwacard" src="images/halwacard1.jpg">
+  		</div>
+  	</div>
+</section>
+
+
+<!-------------------------------------Why choose us----------------------------------->
+
+
+<section id="chooseus">
+	<div class="title-text">
+		<h1>Why Choose Us</h1>
+	</div>
+	<div class="char">
+		<div class="char-box">
+			<img src="images/manageimg.jpg">
+			<div class="overlay"></div>
+			<div class="char-desc">
+				<h3>Experienced Management</h3>
+				<hr>
+				<p>The Owner has more than 30 years Experience in the Dairy Field. To create and manage the experiences, businesses must evaluate, implement, integrate, and build experiences from a fragmented landscape.</p>
+			</div>
+		</div>
+		<div class="char-box">
+			<img src="images/procap.jpg">
+			<div class="overlay"></div>
+			<div class="char-desc">
+				<h3>Production Capacity</h3>
+				<hr>
+				<p>Situated in a vast Farm, approximate more than 2500 sq feet, We have a Semi-Automated Milk Pasteurization with the capacity of 1000 litre/hour. So we can produce a big amount of Quantity.</p>
+			</div>
+		</div>
+		<div class="char-box">
+			<img src="images/qoqimg.jpg">
+			<div class="overlay"></div>
+			<div class="char-desc">
+				<h3>Quality Over Quantity</h3>
+				<hr>
+				<p>For a business that is not yet well established, their path to success lies in providing the best quality of their services and products. So our goal is to provide the 'BEST' Qualtity in all products.</p>
+			</div>
+		</div>
+		<div class="char-box">
+			<img src="images/asperneed.jpg">
+			<div class="overlay"></div>
+			<div class="char-desc">
+				<h3>As Per Your Need</h3>
+				<hr>
+				<p>After having these kind of facilities, We can produce either Quality you need or Quantity you need. </p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!------------------------------------call to action------------------------------------->
+
+<section class="cta">
+	<h1 class="querydis">Contact us for query or also for Distributionship or other Information</h1>
+	<a href="contact.html" class="hero-btn1">Contact us for more</a>
+	<h4>Get in touch</h4>
+	<div class="icons">
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-facebook"></i>
+	</div>
+	<p>Made with <i class="fa fa-heart-o"></i> by Khush Patel  <i class="fa fa-smile-o"></i></p>
+</section>
+
+
+
+
+
+
+
+
+
+<!--------------------------------JavaScript for Slider ---------------------------------->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script src="/path/to/flickity.pkgd.min.js"></script>
+
+<!-----------------------------------JavaScript for toggle menu-------------------------->
+<script>
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu() {
+		navLinks.style.right = "0";
+	}
+	function hideMenu() {
+		navLinks.style.right = "-220px";
+	}
+
+</script>
+
+
+</body>
+</html>
